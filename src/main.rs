@@ -7,7 +7,7 @@ fn main() {
     println!("Guess the number!");
     let secret_number = rand::thread_rng().gen_range(1, 101);
     loop {
-        let guess: u32 = match get_guess(){
+        let guess: u32 = match get_guess() {
             Ok(i) => i,
             Err(_) => continue,
         };
